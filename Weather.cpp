@@ -1,5 +1,13 @@
-// Console weather app made with c++11
+// Console weather-predictor app made with c++11
 // Author: Popescu Andrei Gabriel
+
+/*
+
+    This cpp-file purpose is to generate a txt filled with data
+    which will be used to train a neural net ( no frameworks : my implementation)
+    and then for: validation and test.
+
+*/
 
 #include <iostream>
 #include <sstream>
@@ -7,8 +15,8 @@
 #include <vector>
 
 
-std::ifstream data("/home/popescu-andrei/Desktop/rdu-weather-history.csv");
-std::ofstream out("/home/popescu-andrei/Desktop/weather.txt");
+std::ifstream data("rdu-weather-history.csv");
+std::ofstream out("weather.txt");
 
 std::vector<std::string> parse_data(std::string input){
     std::vector<std::string> return_value;
@@ -21,6 +29,16 @@ std::vector<std::string> parse_data(std::string input){
 
     return return_value;
 }   
+
+void process_data(std::ifstream& weather){
+    std::string date;
+    std::string tmin;
+    std::string tmax;
+    std::string prep;
+    std::string snowfall;
+    
+
+}
 
 int main(){
     // Made the tranzition from csv to txt 
