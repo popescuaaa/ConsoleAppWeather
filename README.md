@@ -1,5 +1,5 @@
 # ConsoleAppWeather
-# C++ side project based on data manipulation 
+# C++ weather predictor 
 
 ConsoleAppWeather is a console application wetaher predictor which uses a **Neural Network** and a big dataset consisting on wetaher forecast data from 2009 to 2018.
 
